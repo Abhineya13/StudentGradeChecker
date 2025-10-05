@@ -5,28 +5,24 @@ public class Main {
       
         Scanner input = new Scanner(System.in);
 
-    
         String name;
         int marks;
         boolean passed;
 
-  
         System.out.println("=== Student Grade Checker ===");
         System.out.print("Enter student name: ");
         name = input.nextLine();
 
         System.out.print("Enter marks (0–100): ");
         marks = input.nextInt();
-
-       
+ 
         passed = marks >= 40;
 
-   
         System.out.println("\n--- Result ---");
         System.out.println("Name: " + name);
         System.out.println("Marks: " + marks);
         if (passed) {
-            System.out.println("Result: Passed 🎉");
+            System.out.println("Result: Passed ");
         } else {
             System.out.println("Result: Failed ");
         }
